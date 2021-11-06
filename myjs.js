@@ -74,8 +74,10 @@ function submitCredentials(){
     cname = document.getElementById("name").value;
     cemail = document.getElementById("email").value;
     for(var div in myDivs){
-        if(myDivs[div]=="instruction")
+        if(myDivs[div]=="instruction"){
             document.getElementById(myDivs[div]).style.display="block";
+            document.getElementById(myDivs[div]).style.display="flex";
+        }
         else
             document.getElementById(myDivs[div]).style.display="none";
     }

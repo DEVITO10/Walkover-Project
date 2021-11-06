@@ -4,6 +4,8 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 10px;
 }
 .main-container{
     width: 90%;
@@ -64,6 +66,18 @@ html, body{
     background-color: yellowgreen;
     border: 2px solid green;
     outline: none;
+    border-radius: 5px;
+}
+
+.content .instruction{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: large;
+}
+.content .instruction input[type="button"]{
+    background-color: rgba(255,255,0,0.5);
+    border: 2px solid black;
     border-radius: 5px;
 }
 

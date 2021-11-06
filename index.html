@@ -24,7 +24,8 @@
         <div class="content no-gutters">
             <!--Login Credentials-->
             <div class="candidate-credentials" id="candidate-credentials">
-                <span style="color:red;font-size:x-large">Candidate Credentials</span>
+                <span style="color:red;font-size:x-large;">Candidate Credentials</span>
+                <span style="font-size:small">Use full name and reputable email providers</span>
                 <input type="text" id="name" placeholder="Enter your Name" required>
                 <input type="email" id="email" placeholder="Enter valid E-Maild Id" required>
                 <input type="button" id="submit-cred" value="Submit" onclick="submitCredentials()" disabled style="cursor: no-drop;">
@@ -33,18 +34,21 @@
             <!--Instructions-->
             <div class="instruction no-gutters" id="instruction" style="display: none;">
                 <!--Rules-->
-                
+                <div>
+                    <ol>
+                        <li>The Assessment is of <b>10 minutes</b> in total, and consist of <b>10 questions</b>.</li>
+                        <li>All questions are compulsory.</li>
+                        <li>If you fail to Submit your test within 10 minutes, it will get auto submitted.</li>
+                        <li>Remaining time is shown at the top right corner.</li>
+                    </ol>
+                </div>
                 <!--Accept Butoon-->
                 <input type="button" value="Accept & Continue" onclick="acceptInstruction()">
             </div>
 
             <!--Questions-->
             <div class="question no-gutters" id="question" style="display: none;">
-                <div id="question-set" style="width:70%;height:100%">
-
-                </div>
-                <!--Question Submit Button-->
-
+                <div id="question-set" style="width:70%;height:100%"></div>
             </div>
 
             <!--Final Result-->
@@ -58,5 +62,6 @@
             <div class="col-md-6 col-sm-12 time"><span id="time"></span></div>
         </div>
     </div>
+    <span style="margin-top:auto;color:red;">Walkover Project by Debankan (debankan2014@gmail.com), Brijesh (raibrijesh45@gmail.com) and Keshav (keshav6240@gmail.com)</span>
 </body>
 </html>
