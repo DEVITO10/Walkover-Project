@@ -22,11 +22,27 @@
         </div>
         <!--content/questions-->
         <div class="content no-gutters">
+            <!--Login Credentials-->
             <div class="candidate-credentials">
                 <span style="color:red;font-size:x-large">Candidate Credentials</span>
                 <input type="text" id="name" placeholder="Enter your Name">
                 <input type="email" id="email" placeholder="Enter valid E-Maild Id">
-                <input type="button" value="Submit">
+                <input type="button" value="Submit" onclick="submitCredentials()">
+            </div>
+
+            <!--Instructions-->
+            <div class="instruction no-gutters" style="display: none;">
+                <!--Rules-->
+
+                <!--Accept Butoon-->
+                <input type="button" value="Accept & Continue">
+            </div>
+
+            <!--Questions-->
+            <div class="question no-gutters" style="display: none;">
+                
+                <!--Question Submit Button-->
+                <input type="button" value="Final Submit">
             </div>
         </div>
         <!--footer-->
