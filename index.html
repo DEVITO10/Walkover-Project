@@ -23,7 +23,7 @@
         <!--content/questions-->
         <div class="content no-gutters">
             <!--Login Credentials-->
-            <div class="candidate-credentials">
+            <div class="candidate-credentials" id="candidate-credentials">
                 <span style="color:red;font-size:x-large">Candidate Credentials</span>
                 <input type="text" id="name" placeholder="Enter your Name">
                 <input type="email" id="email" placeholder="Enter valid E-Maild Id">
@@ -31,18 +31,23 @@
             </div>
 
             <!--Instructions-->
-            <div class="instruction no-gutters" style="display: none;">
+            <div class="instruction no-gutters" id="instruction" style="display: none;">
                 <!--Rules-->
-
+                
                 <!--Accept Butoon-->
-                <input type="button" value="Accept & Continue">
+                <input type="button" value="Accept & Continue" onclick="acceptInstruction()">
             </div>
 
             <!--Questions-->
-            <div class="question no-gutters" style="display: none;">
+            <div class="question no-gutters" id="question" style="display: none;">
                 
                 <!--Question Submit Button-->
-                <input type="button" value="Final Submit">
+                <input type="button" value="Final Submit" onclick="finalSubmit()">
+            </div>
+
+            <!--Final Result-->
+            <div class="final-result" id="final-result" style="display: none">
+
             </div>
         </div>
         <!--footer-->
