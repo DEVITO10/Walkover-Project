@@ -27,7 +27,7 @@
                 <span style="color:red;font-size:x-large">Candidate Credentials</span>
                 <input type="text" id="name" placeholder="Enter your Name" required>
                 <input type="email" id="email" placeholder="Enter valid E-Maild Id" required>
-                <input type="button" value="Submit" onclick="submitCredentials()">
+                <input type="button" id="submit-cred" value="Submit" onclick="submitCredentials()" disabled style="cursor: no-drop;">
             </div>
 
             <!--Instructions-->
@@ -40,9 +40,11 @@
 
             <!--Questions-->
             <div class="question no-gutters" id="question" style="display: none;">
-                
+                <div id="question-set" style="width:70%;height:100%">
+
+                </div>
                 <!--Question Submit Button-->
-                <input type="button" value="Final Submit" onclick="finalSubmit()">
+
             </div>
 
             <!--Final Result-->
