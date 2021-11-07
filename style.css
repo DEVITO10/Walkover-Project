@@ -91,7 +91,10 @@ html, body{
     box-sizing: border-box;
     overflow-y: scroll;
     padding: 10px;
-    border: 2px solid red;
+}
+.content #question-set{
+    width:70%;
+    height:100%;
 }
 .question-grid{
     display: grid;
@@ -126,4 +129,18 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/*Responsive Design*/
+@media screen and (max-device-width:480px){
+    #rem{
+        display: none;
+    }
+    .content #question-set{
+        width: auto;
+    }
+    #credits{
+        font-size: x-small;
+    }
 }

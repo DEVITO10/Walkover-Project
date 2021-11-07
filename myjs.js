@@ -94,7 +94,7 @@ function addQuestions(){
             put_question+="<br><input type='radio' value='"+ques_pool[curr_que_set[i]].options[j]+"' name='question"+(i+1)+"'>&emsp;"+ques_pool[curr_que_set[i]].options[j];
         put_question+= "</div></div>";
     }
-    put_question+= "<input type='button' value='Final Submit' onclick='finalSubmit()' style='width:20%; margin:20px; padding:5px; font-size:larger; border: 2px solid green; background-color: yellowgreen; border-radius: 5px'>";
+    put_question+= "<input type='button' value='Final Submit' onclick='finalSubmit()' style='margin:20px; padding:5px; font-size:larger; border: 2px solid green; background-color: yellowgreen; border-radius: 5px'>";
     document.getElementById("question-set").innerHTML = put_question;
 }
 
